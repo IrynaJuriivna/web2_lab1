@@ -1,18 +1,17 @@
-p, h1, h2{
+body{
+
     font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
 }
 h1{
-    font-weight: bold;
     text-align: center;
 }
 p{
-    font-weight: bold;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 50px;
 }
 h2{   
-    font-weight: bold;
     text-align: center;
     border-bottom: 3px solid black;
     border-left: 3px solid black;
@@ -21,43 +20,50 @@ h2{
     margin-bottom: 0%;
     WIDTH: 120PX;
 }
-.zag{
+.pink, .yellow, .red{
     float:right;
 }
-.col-md-1 h2 {
+.pink {
     background-color:pink;
 }
-.col-md-2  h2{
+.red{
     color: white;
     background-color:red;
 }
-.col-md-3  h2{
+.yellow{
     background-color:yellow;
 }
 .row {
     align-content: center;
     width: 100%;
 }
-.col-md-1, .col-md-2, .col-md-3 {
-    background-color:gray;
-    float: left;
-    border: 3px solid black;
-    margin: 1%;
-}
-
 @media (min-width: 993px) {
-    .col-md-1, .col-md-2, .col-md-3 {
+    .col-md-1, .col-md-3 {
+        background-color:gray;
+        float: left;
+        border: 3px solid black;
+        margin: 1%;
         width: 30.7%;
     }
 }
 @media (max-width: 768px){
-    .col-md-1, .col-md-2, .col-md-3{
+    .col-md-1, .col-md-3{
+        background-color:gray;
+        float: left;
+        border: 3px solid black;
+        margin: 1%;
         margin-left: 4%;
         margin-right: 4%;
     }
 } 
 @media (min-width: 769px) and (max-width: 992px){
-    .col-md-1, .col-md-2{
+    .col-md-1{
         width: 47.1%;
+    }
+    .col-md-1, .col-md-3{
+        background-color:gray;
+        float: left;
+        border: 3px solid black;
+        margin: 1%;
     }
 }
